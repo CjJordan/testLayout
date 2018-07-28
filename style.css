@@ -20,9 +20,9 @@ body {
   background-image:      -o-linear-gradient(top, #445895, #6a7ebb); 
   background-image:         linear-gradient(top, #445895, #6a7ebb);
   text-transform: uppercase;
-  grid-template-rows: 70px min-content min-content min-content;
+  grid-template-rows: 50px min-content min-content min-content;
   grid-template-columns: 1fr;
-  grid-gap: 25px;
+  grid-gap: 20px;
   grid-template-areas: "header"
                         "form"
                         "todo"
@@ -112,6 +112,7 @@ form{
 
 @media only screen and (min-width:768px) {
   body{
+    grid-template-rows: 70px min-content min-content min-content;
     grid-template-columns: 1fr 700px 1fr;
     grid-template-areas: " header header header"
                          "  .      form     .  "
