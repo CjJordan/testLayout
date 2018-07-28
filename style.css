@@ -18,6 +18,11 @@ body {
   min-height: 100vh;
   min-width: 100%;
   background: linear-gradient(#445895, #6a7ebb);
+  background-image: -webkit-linear-gradient(top, #445895, #6a7ebb); 
+  background-image:    -moz-linear-gradient(top, #445895, #6a7ebb); 
+  background-image:     -ms-linear-gradient(top, #445895, #6a7ebb); 
+  background-image:      -o-linear-gradient(top, #445895, #6a7ebb); 
+  background-image:         linear-gradient(top, #445895, #6a7ebb);
   text-transform: uppercase;
   grid-template-rows: 70px min-content min-content;
   grid-template-columns: 5% 90% 5%;
@@ -104,6 +109,7 @@ input{
   body{
     grid-template-columns: 1fr 700px 1fr;
     font-size: 16px;
+    background: salmon;
   }
 
   ul li, input{
