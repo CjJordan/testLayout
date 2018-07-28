@@ -7,7 +7,7 @@
 }
 
 html{
-  
+  background: #445895
 }
 
 body {
@@ -105,7 +105,7 @@ input{
         Larger Screens
 ===============================*/
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:900px) {
   body{
     grid-template-columns: 1fr 700px 1fr;
     font-size: 16px;
