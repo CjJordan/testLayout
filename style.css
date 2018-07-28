@@ -27,6 +27,7 @@ body {
                         "form"
                         "todo"
                         "done";
+  padding: 5px;
 }
 
 h1 { 
@@ -61,7 +62,7 @@ ul{
 }
 
 ul li, input{
-  padding: 5px 20px;
+  padding: 15px 20px;
   border-radius: 8px;
   width: 90%;
   font-size: 1.2em;
