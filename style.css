@@ -22,7 +22,7 @@ body {
   text-transform: uppercase;
   grid-template-rows: 70px min-content min-content min-content;
   grid-template-columns: 1fr;
-  grid-gap: 45px;
+  grid-gap: 25px;
   grid-template-areas: "header"
                         "form"
                         "todo"
@@ -61,7 +61,7 @@ ul{
 }
 
 ul li, input{
-  padding: 15px 20px;
+  padding: 5px 20px;
   border-radius: 8px;
   width: 90%;
   font-size: 1.2em;
@@ -117,6 +117,7 @@ form{
                          "  .      todo     .  "
                          "  .      done     .  ";
     font-size: 16px;
+    grid-gap: 45px;
   }
 
   ul li, input{
