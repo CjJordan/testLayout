@@ -13,21 +13,20 @@ body {
   display: grid;
   min-height: 100vh;
   min-width: 100%;
-  background: linear-gradient(#445895, #6a7ebb);
-  background-image: -webkit-linear-gradient(top, #445895, #6a7ebb); 
-  background-image:    -moz-linear-gradient(top, #445895, #6a7ebb); 
-  background-image:     -ms-linear-gradient(top, #445895, #6a7ebb); 
-  background-image:      -o-linear-gradient(top, #445895, #6a7ebb); 
-  background-image:         linear-gradient(top, #445895, #6a7ebb);
+  background: linear-gradient(135deg, #445895, #8797c8);
+  background-image: -webkit-linear-gradient(135deg, #445895, #8797c8); 
+  background-image:    -moz-linear-gradient(135deg, #445895, #8797c8); 
+  background-image:     -ms-linear-gradient(135deg, #445895, #8797c8); 
+  background-image:      -o-linear-gradient(135deg, #445895, #8797c8); 
+  background-image:         linear-gradient(135deg, #445895, #8797c8);
   text-transform: uppercase;
   grid-template-rows: 50px min-content min-content min-content;
-  grid-template-columns: 1fr;
   grid-gap: 20px;
-  grid-template-areas: "header"
-                        "form"
-                        "todo"
-                        "done";
-  padding: 5px;
+  grid-template-columns: 5px 1fr 5px;
+  grid-template-areas: " header header header"
+                         "  .      form     .  "
+                         "  .      todo     .  "
+                         "  .      done     .  ";
 }
 
 h1 { 
@@ -86,7 +85,7 @@ input{
 
 .done ul li{
   color: #e1e5f1;
-  background: #6a7ebb;
+  background: #8797c8;
   
 }
 
