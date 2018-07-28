@@ -6,13 +6,9 @@
   box-sizing: border-box;
 }
 
-html{
-  background: #445895
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   display: grid;
   min-height: 100vh;
@@ -41,8 +37,9 @@ p {
   margin-bottom: 1em;
 }
 
-i{
+.far{
   margin-right: 10px;
+  display: none;
 }
 
 hr {
@@ -62,7 +59,7 @@ ul{
 }
 
 ul li, input{
-  padding: 30px 20px;
+  padding: 35px 20px;
   border-radius: 8px;
   width: 100%;
   font-size: 1.2em;
@@ -102,17 +99,20 @@ input{
 }
 
 /*=============================
-        Larger Screens
+        DESKTOP
 ===============================*/
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:768px) {
   body{
     grid-template-columns: 1fr 700px 1fr;
     font-size: 16px;
-    background: salmon;
   }
 
   ul li, input{
     padding: 10px 20px;
+  }
+
+  .far{
+    display: inline-block;
   }
 }
