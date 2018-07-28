@@ -20,12 +20,13 @@ body {
   background-image:      -o-linear-gradient(top, #445895, #6a7ebb); 
   background-image:         linear-gradient(top, #445895, #6a7ebb);
   text-transform: uppercase;
-  grid-template-rows: 70px min-content min-content;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 70px min-content min-content min-content;
+  grid-template-columns: 1fr;
   grid-gap: 45px;
-  grid-template-areas: "header header header"
-                        " .     todo    . "
-                        " .     done    . ";
+  grid-template-areas: "header"
+                        "form"
+                        "todo"
+                        "done";
 }
 
 h1 { 
@@ -43,7 +44,8 @@ p {
 }
 
 hr {
-  margin: 1em 0;
+  margin-top: 1em;
+  border-color: #6a7ebb;
 }
 
 header {
@@ -61,8 +63,9 @@ ul{
 ul li, input{
   padding: 35px 20px;
   border-radius: 8px;
-  width: 100%;
+  width: 90%;
   font-size: 1.2em;
+  margin: auto;
 }
 
 input{
@@ -98,6 +101,10 @@ input{
   grid-area: done;
 }
 
+form{
+  grid-area: form;
+  text-align: center;
+}
 /*=============================
         DESKTOP
 ===============================*/
@@ -105,6 +112,10 @@ input{
 @media only screen and (min-width:768px) {
   body{
     grid-template-columns: 1fr 700px 1fr;
+    grid-template-areas: " header header header"
+                         "  .      form     .  "
+                         "  .      todo     .  "
+                         "  .      done     .  ";
     font-size: 16px;
   }
 
