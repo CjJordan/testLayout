@@ -1,0 +1,112 @@
+/*=============================
+  Mobile First Defaults
+===============================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: white;
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  background: linear-gradient(#445895, #6a7ebb);
+  text-transform: uppercase;
+  grid-template-rows: 70px min-content min-content;
+  grid-template-columns: 5% 90% 5%;
+  grid-gap: 45px;
+  grid-template-areas: "header header header"
+                        " .     todo    . "
+                        " .     done    . ";
+}
+
+h1 { 
+  font-size: 2em;
+}
+
+p {
+  font-size: .9em;
+  margin-bottom: 1em;
+}
+
+i{
+  margin-right: 10px;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+header {
+  grid-area: header;
+  align-self: end;
+  padding-left: 50px;
+}
+
+ul{ 
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 35px;
+}
+
+ul li, input{
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+input{
+  text-transform: uppercase;
+}
+
+::placeholder{
+  color: #7f88a3;
+  font-size: .9em;
+}
+
+.todo ul li{
+  color: #171A21;
+  background: white;
+  font-weight: bold;
+}
+
+.done ul li{
+  color: #e1e5f1;
+  background: #6a7ebb;
+  
+}
+
+.done-task {
+  text-decoration: line-through;
+}
+
+.todo {
+  grid-area: todo;
+}
+
+.done {
+  grid-area: done;
+}
+
+/*=============================
+        Larger Screens
+===============================*/
+
+@media only screen and (min-width:600px) {
+  body{
+    grid-template-columns: 1fr 700px 1fr;
+    font-size: 16px;
+  }
+
+  ul li, input{
+    padding: 10px 20px;
+  }
+}
